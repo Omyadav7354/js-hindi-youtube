@@ -19,7 +19,7 @@ const regularUser = {
 
 // console.log(regularUser.fullname);
 // console.log(regularUser.fullname.userfullname);
-console.log(regularUser.fullname.userfullname.firstname);
+// console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -50,12 +50,39 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true
-console.log(tinderUser.hasOwnProperty('isLogged')); // false
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true
+// console.log(tinderUser.hasOwnProperty('isLogged')); // false
+
+const course = {
+    course: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+const {courseInstructor: instructor} = course // : for alias
+
+console.log(instructor);
+
+//************ API ***********
+
+// {
+//     "name": "OmPrakash",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
 
 
+// [
+//     {},
+//     {},
+//     {}
+// ]
