@@ -28,9 +28,20 @@ const result = addTwoNumbers(3, 5)
 // console.log("Result: ", result); 
 
 function logInUserMessage(username){
+    /*if(username === undefined){
+        console.log("Please enter a username")
+        return
+    }
+    return `${username} just logged in`
+    */
+    // or
+    if(!username){
+        console.log("Please enter a username")
+        return 
+    }
     return `${username} just logged in`
 }
 // console.log(logInUserMessage("omprakash")); // omprakash just login
-console.log(logInUserMessage("")); // just logged in
+// console.log(logInUserMessage("")); // just logged in
 console.log(logInUserMessage()); // undefuned just log in
 
