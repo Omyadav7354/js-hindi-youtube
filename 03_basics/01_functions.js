@@ -43,5 +43,44 @@ function logInUserMessage(username){
 }
 // console.log(logInUserMessage("omprakash")); // omprakash just login
 // console.log(logInUserMessage("")); // just logged in
-console.log(logInUserMessage()); // undefuned just log in
+// console.log(logInUserMessage()); // undefuned just log in
 
+
+function calculateCartPrice(...num1) {
+      return num1
+}
+//console.log(calculateCartPrice(200, 300, 400, 2000)); // [ 200, 300, 400, 2000 ]
+
+function calculateCartPrice1(val1, val2, ...num2) {
+    return num2
+}
+// console.log(calculateCartPrice1(200, 300, 400, 2000)); // [ 400, 2000 ]
+
+const user = {
+    username: "OmPrakash",
+    price: 1999
+}
+
+function handleObject(anyObject) {
+    console.log(`userName is ${anyObject.username} and price is ${anyObject.price}`);  
+}
+
+// handleObject(user)
+// or You can pass direct object
+handleObject({
+    username: "Op",
+    price: 19999
+})
+
+const myNewArray= [200, 400, 600, 100]
+
+function returnSecondValue (getArray){
+    return getArray[1]
+}
+// console.log(returnSecondValue(myNewArray));
+// or You can pass direct Array
+
+function returnSecondValue (getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue([200, 400, 600, 100]));
